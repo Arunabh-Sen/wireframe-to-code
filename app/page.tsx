@@ -12,7 +12,7 @@ export default function Home() {
   console.log(user?.user);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-black to-black text-white">
       <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-gradient-to-r from-black via-gray-900 to-black border-b border-gray-700 text-sm py-3 sm:py-0">
         <nav
           className="relative p-5 max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
@@ -241,6 +241,96 @@ export default function Home() {
     </div>
   </div>
 </section>
+
+<section className="relative overflow-hidden mb-4 py-10 bg-transparent text-white">
+  {/* Left & Right Blurs */}
+  <div className="absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
+  <div className="absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
+
+  <h2 className="text-center text-3xl font-bold mb-10 bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text text-transparent">
+    AI Models Used
+  </h2>
+
+  {/* Scrolling Container */}
+  <div className="overflow-hidden whitespace-nowrap relative">
+    <div className="animate-scroll-infinite inline-flex gap-20">
+      {["Gemini (Google)", "LLaMA (Meta)", "Deepseek R1"].map((model, i) => (
+        <span
+          key={i}
+          className="text-xl px-4 py-2 font-semibold rounded-xl shadow text-slate-500 cursor-pointer hover:text-white transition-all duration-300"
+        >
+          {model}
+        </span>
+      ))}
+      {/* Duplicate for seamless infinite scroll */}
+      {["Gemini (Google)", "LLaMA (Meta)", "Deepseek R1"].map((model, i) => (
+        <span
+          key={`dup-${i}`}
+          className="text-xl px-4 py-2 font-semibold rounded-xl shadow text-slate-500 cursor-pointer hover:text-white transition-all duration-300"
+        >
+          {model}
+        </span>
+      ))}
+      {/* Duplicate for seamless infinite scroll */}
+      {["Gemini (Google)", "LLaMA (Meta)", "Deepseek R1"].map((model, i) => (
+        <span
+          key={`dup-${i}`}
+          className="text-xl px-4 py-2 font-semibold rounded-xl shadow text-slate-500 cursor-pointer hover:text-white transition-all duration-300"
+        >
+          {model}
+        </span>
+      ))}
+      {/* Duplicate for seamless infinite scroll */}
+      {["Gemini (Google)", "LLaMA (Meta)", "Deepseek R1"].map((model, i) => (
+        <span
+          key={`dup-${i}`}
+          className="text-xl px-4 py-2 font-semibold rounded-xl shadow text-slate-500 cursor-pointer hover:text-white transition-all duration-300"
+        >
+          {model}
+        </span>
+      ))}
+      {/* Duplicate for seamless infinite scroll */}
+      {["Gemini (Google)", "LLaMA (Meta)", "Deepseek R1"].map((model, i) => (
+        <span
+          key={`dup-${i}`}
+          className="text-xl px-4 py-2 font-semibold rounded-xl shadow text-slate-500 cursor-pointer hover:text-white transition-all duration-300"
+        >
+          {model}
+        </span>
+      ))}
+      
+      {/* Duplicate for seamless infinite scroll */}
+      {["Gemini (Google)", "LLaMA (Meta)", "Deepseek R1"].map((model, i) => (
+        <span
+          key={`dup-${i}`}
+          className="text-xl px-4 py-2 font-semibold rounded-xl shadow text-slate-500 cursor-pointer hover:text-white transition-all duration-300"
+        >
+          {model}
+        </span>
+      ))}
+      {/* Duplicate for seamless infinite scroll */}
+      {["Gemini (Google)", "LLaMA (Meta)", "Deepseek R1"].map((model, i) => (
+        <span
+          key={`dup-${i}`}
+          className="text-xl px-4 py-2 font-semibold rounded-xl shadow text-slate-500 cursor-pointer hover:text-white transition-all duration-300"
+        >
+          {model}
+        </span>
+      ))}
+      {/* Duplicate for seamless infinite scroll */}
+      {["Gemini (Google)", "LLaMA (Meta)", "Deepseek R1"].map((model, i) => (
+        <span
+          key={`dup-${i}`}
+          className="text-xl px-4 py-2 font-semibold rounded-xl shadow text-slate-500 cursor-pointer hover:text-white transition-all duration-300"
+        >
+          {model}
+        </span>
+      ))}
+      
+    </div>
+  </div>
+</section>
+
 
 
       <footer className="bg-gradient-to-r from-black via-gray-900 to-black border-t border-gray-700">
